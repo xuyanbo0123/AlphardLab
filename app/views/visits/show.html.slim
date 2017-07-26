@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Uuid:
+  = @visit.uuid
+p
+  strong Ip:
+  = @visit.ip
+p
+  strong Browser:
+  = @visit.browser
+p
+  strong Device:
+  = @visit.device
+
+= link_to 'Edit', edit_visit_path(@visit)
+'|
+= link_to 'Back', visits_path

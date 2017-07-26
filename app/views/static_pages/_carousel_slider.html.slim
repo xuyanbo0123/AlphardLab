@@ -1,0 +1,32 @@
+/! carousel slider
+#myCarousel.carousel.slide data-ride="carousel" 
+  /! Carousel indicators
+  ol.carousel-indicators
+    li.active data-slide-to="0" data-target="#myCarousel" 
+    li data-slide-to="1" data-target="#myCarousel" 
+  /! Carousel items
+  .carousel-inner
+    .item.item-c-slide.active
+      .container
+        .row
+          .col-sm-12.text-center.slide-text
+            h1.animated.slideInLeft.delay-1 Welcome
+            .divide15
+            p.animated.slideInLeft.delay-2 We are a creative team in lead generation
+            .divide15
+    /! item
+    .item.item-c-slide
+      .container
+        .row
+          .col-sm-12.text-center.slide-text
+            p.animated.slideInLeft.delay-1 We are truly
+            .divide15
+            h1.animated.slideInLeft.delay-2 Passionate
+            .divide15
+  /! item
+  /! carousel inner
+  /! Carousel nav
+  a.carousel-control.left data-slide="prev" href="#myCarousel" 
+    i.fa.fa-angle-left
+  a.carousel-control.right data-slide="next" href="#myCarousel" 
+    i.fa.fa-angle-right

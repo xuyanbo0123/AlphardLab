@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta charset="utf-8" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    title Alphard Lab, Inc
+    = stylesheet_link_tag    'application', media: 'all'
+    link href="http://fonts.googleapis.com/css?family=Raleway:400,200,300,600,700,900" rel="stylesheet" type="text/css" /
+    link href="http://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet" type="text/css" /
+    link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    = javascript_include_tag 'application'
+    script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"
+    = csrf_meta_tags
+    /[if lt IE 9]
+      script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"
+      script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"
+  body
+    /= render 'layouts/header_top'
+    = render 'layouts/navigation'
+    = yield
+    = render 'layouts/footer'
+
